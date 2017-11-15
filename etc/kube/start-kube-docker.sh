@@ -13,6 +13,6 @@ docker run \
     --net=host \
     --pid=host \
     --privileged=true \
-    gcr.io/google_containers/hyperkube:v1.6.2 \
+    gcr.io/google_containers/hyperkube:v1.7.10 \
     sh "/rootfs/$PWD/etc/kube/internal.sh"
 until kubectl version 2>/dev/null >/dev/null; do sleep 5; done
